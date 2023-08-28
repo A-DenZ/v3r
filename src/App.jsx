@@ -1,9 +1,31 @@
+import { Routes, Route } from 'react-router-dom'
+
 function App() {
 
   return (
-    <div>
-      <h1>Ta maman, elle pue</h1>
-    </div>
+    <>
+    <Routes>
+      <Route path="/" element={<App/>}/>
+      
+      <Route path="/admin">
+        <Route index element/>
+
+        <Route path='/formulaires'>
+          <Route path={`:${id}`}/>
+          <Route path='nouveau'/>
+        </Route>
+
+        <Route path='/reponse'>
+          <Route path={`:${id}`}/>
+        </Route>
+
+        <Route path='/partage'>
+          <Route path='nouveau'/>
+        </Route>
+
+      </Route>
+    </Routes>
+    </>
   )
 }
 
