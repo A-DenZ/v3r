@@ -1,5 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
 
+import { Routes, Route } from 'react-router-dom'
+import Admin from './pages/Admin/Admin'
 function App() {
 
   return (
