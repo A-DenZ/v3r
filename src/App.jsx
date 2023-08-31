@@ -1,9 +1,11 @@
-function App() {
+import Admin from './pages/Admin/Admin'
+
+const App = () => {
 
   return (
-    <div>
-      <h1>Ta maman, elle pue</h1>
-    </div>
+    <>
+      <Admin />
+    </>
   )
 }
 
