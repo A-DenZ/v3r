@@ -1,8 +1,6 @@
 #dashboard{
+    padding-inline:4rem ;
+    display : grid;
 
-    .card{
-        width: 602px;
-        height: 548.466px;
-    }
-
+    grid-template-columns: 1fr 1fr;
 }
