@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import SideBar from '../../components/navbars/SideBar/SideBar'
 import './styles.scss'
-import SecondaryBar from '../../components/navbars/SideBar/SecondaryBar'
+import SecondaryBar from '../../components/navbars/SecondaryBar/SecondaryBar'
 
 const Admin = () => {
 
