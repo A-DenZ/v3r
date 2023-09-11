@@ -2,6 +2,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Admin from './pages/Admin/Admin'
 import Dashboard from './pages/Admin/Dashboard/Dashboard'
+import SharingZone from './pages/Admin/SharingZone/SharingZone'
 function App() {
 
   return (
@@ -21,7 +22,7 @@ function App() {
           {/* <Route path={`:${id}`}/> */}
         </Route>
 
-        <Route path='partage'>
+        <Route path='partage' element={<SharingZone/>}>
           <Route path='nouveau'/>
         </Route>
 

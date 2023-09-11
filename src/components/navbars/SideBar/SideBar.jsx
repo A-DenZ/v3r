@@ -2,6 +2,7 @@ import logo from '../../../assets/images/logo.png'
 
 /* homemade component */ 
 import TextIcon from '../../tools/TextIcon/TextIcon'
+import Button from '../../tools/Button/Button'
 
 /* import icon */
 import { dashboard, responses, folder, check, analytic, rightArrow, logout } from '../../../lib/icons'
@@ -20,12 +21,13 @@ const SideBar = () => {
                 <div>
                     <p className='keywords'>MENU</p>
                     <ul>
-                        <li><TextIcon text={'Tableau de bord'} icon={dashboard} type={'reverse'}/></li>
+                        <li><TextIcon text={'Tableau de bord'} icon={dashboard}/></li>
                         <li><TextIcon text={'Réponses'} icon={responses}/></li>
                         <li><TextIcon text={'Zone de partage'} icon={folder}/></li>
                         <li><TextIcon text={'Modèles'} icon={check}/></li>
                         <li><TextIcon text={'Analytique'} icon={analytic}/></li>
                     </ul>
+                    
                 </div>
             </div>
 
