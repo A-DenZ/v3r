@@ -1,15 +1,26 @@
 import {  } from 'react'
+import './styles.scss'
 
-const TextIcon = ({ text, src,  }) => {
+
+
+const TextIcon = ({ text, type, icon}) => {
 
     
     return (
-        <div className="text-icon">
-            <img src={src} alt={text} />
+        <div className={`text-icon ${type === 'reverse' ? 'reverse' : ''}`}>      
+            {type !== 'reverse' && icon}
             <p>{text}</p>
-            <img src="" alt="" />
+            {type === 'reverse' && icon}
         </div>
     )
 }
+
+
+
+
+
+
+
+
 
 export default TextIcon

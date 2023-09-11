@@ -1,0 +1,9 @@
+.text-icon  {
+    display: grid; 
+    grid-template-columns: 30px auto;
+}
+
+.text-icon.reverse {
+    display: grid; 
+    grid-template-columns: auto 70px;
+}

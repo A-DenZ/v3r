@@ -8,19 +8,19 @@ function App() {
     <Routes>
       <Route path="/" element={<App/>}/>
       
-      <Route path="/admin">
+      <Route path="/admin" element={<Admin/>}>
         <Route index element/>
 
-        <Route path='/formulaires'>
-          <Route path={`:${id}`}/>
+        <Route path='formulaires'>
+          {/* <Route path={`:${id}`}/> */}
           <Route path='nouveau'/>
         </Route>
 
-        <Route path='/reponse'>
-          <Route path={`:${id}`}/>
+        <Route path='reponse'>
+          {/* <Route path={`:${id}`}/> */}
         </Route>
 
-        <Route path='/partage'>
+        <Route path='partage'>
           <Route path='nouveau'/>
         </Route>
 
