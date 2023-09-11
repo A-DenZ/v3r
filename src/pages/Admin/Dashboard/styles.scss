@@ -6,29 +6,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 500px;
     gap: 2rem ;
-    
-    .first-group {
-        height: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        .icon {
-            margin-bottom: 40px;
-        }
-
-        .main-title {
-            text-align: center;
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 1.25px;
-            color: var(--black);
-            
-        }
-   }
 
 
     .link-to {
@@ -41,7 +18,40 @@
     }
 
     .card {
-        aspect-ratio: 4/3;
+        display: grid;
+        grid-template-rows: auto auto;
+        place-items: center;
+        row-gap: 2rem;
+        padding: 3rem 2rem;
+
+        .first-group {
+            display: grid;
+            grid-template-rows: auto auto;
+            place-items: center;
+    
+            .icon {
+                margin-bottom: 40px;
+            }
+    
+            .main-title {
+                text-align: center;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 1.25px;
+                color: var(--black);
+                
+            }
+       }
+
+       .text-icon {
+        color: var(--green);
+
+        svg path {
+            fill: var(--green);
+        }
+       }
     }
 
     #stats-card {
