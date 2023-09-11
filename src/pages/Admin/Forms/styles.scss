@@ -1,0 +1,59 @@
+#forms{
+    .container {
+        padding-inline: 4rem;
+        display: grid;
+        gap: 10px;
+        
+        .card{
+            width: 100%;
+            grid-template-rows: repeat(5 , 1fr);
+            padding-inline: 2rem;
+            padding-block: 2rem;
+
+            h2 {
+                margin-bottom: .5rem;
+            }
+
+            .text-container-cards {
+                margin-bottom: 0.5rem;
+                
+                p:first-of-type {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p:last-of-type {
+                    color: var(--black);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                
+            }
+
+        }
+
+        &.grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        &.list {
+            grid-template-columns: 1fr;
+
+            .card{
+                display: grid;
+                grid-template-rows: unset;
+                grid-template-columns: repeat(4 , 200px);
+
+                h2{
+                    grid-column: span 4;
+                }
+            }
+
+        }
+    }
+
+
+}
+    
