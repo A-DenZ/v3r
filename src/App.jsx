@@ -1,15 +1,16 @@
 
 import { Routes, Route } from 'react-router-dom'
 import Admin from './pages/Admin/Admin'
+import Dashboard from './pages/Admin/Dashboard/Dashboard'
 function App() {
 
   return (
     <>
     <Routes>
       <Route path="/" element={<App/>}/>
-      
-      <Route path="/admin" element={<Admin/>}>
-        <Route index element/>
+     
+      <Route path="/admin" element={<Admin />}>
+        <Route index element={<Dashboard/>}/>
 
         <Route path='formulaires'>
           {/* <Route path={`:${id}`}/> */}

@@ -1,5 +1,7 @@
+import { Outlet } from 'react-router-dom'
 import SideBar from '../../components/navbars/SideBar/SideBar'
 import './styles.scss'
+import SecondaryBar from '../../components/navbars/SecondaryBar/SecondaryBar'
 
 const Admin = () => {
 
@@ -7,8 +9,11 @@ const Admin = () => {
     return (
         <div id="admin">
             <SideBar />
-            
-            <div className="right"></div>
+            <main>
+                <SecondaryBar Title="Tableau de Bord"/>
+                <Outlet />
+            </main>
+
         </div>
     )
 }

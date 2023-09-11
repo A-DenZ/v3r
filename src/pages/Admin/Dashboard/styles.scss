@@ -1,0 +1,55 @@
+#dashboard {
+
+    padding-inline:4rem ;
+    display : grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 500px;
+    gap: 2rem ;
+    
+    .first-group {
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .icon {
+            margin-bottom: 40px;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.25px;
+            color: var(--black);
+            
+        }
+   }
+
+
+    .link-to {
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--green);
+    }
+
+    .card {
+        aspect-ratio: 4/3;
+    }
+
+    #stats-card {
+        grid-column: span 2;
+    }
+
+}
+    
+
+
+

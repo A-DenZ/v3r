@@ -1,0 +1,20 @@
+#secondary-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 4rem;
+    height: 120px;
+    
+    h1{
+        color: var(--black);
+    }
+
+    p{
+        color: var(--blue);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.6px;
+    }
+}
