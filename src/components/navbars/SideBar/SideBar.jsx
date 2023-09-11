@@ -4,6 +4,7 @@ import logo from '../../../assets/images/logo.png'
 
 /* homemade component */ 
 import TextIcon from '../../tools/TextIcon/TextIcon'
+import Button from '../../tools/Button/Button'
 
 /* import icon */
 import { dashboard, responses, folder, check, analytic, rightArrow, logout } from '../../../lib/icons'
@@ -28,6 +29,7 @@ const SideBar = () => {
                         <li><TextIcon text={'Modèles'} icon={check}/></li>
                         <li><TextIcon text={'Analytique'} icon={analytic}/></li>
                     </ul>
+                    
                 </div>
             </div>
 

@@ -2,6 +2,7 @@ import './styles.scss'
 import Icon from '../../../components/tools/Icon/Icon'
 import TextIcon from '../../../components/tools/TextIcon/TextIcon'
 import { bell , responses , rightArrow } from '../../../lib/icons'
+
 const Dashboard = () => {
   return (
     <div id="dashboard">
