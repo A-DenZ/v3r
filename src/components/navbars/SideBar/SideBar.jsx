@@ -1,3 +1,5 @@
+import './styles.scss'
+
 import logo from '../../../assets/images/logo.png'
 
 /* homemade component */ 
@@ -12,7 +14,7 @@ const SideBar = () => {
     
     return (
         <nav>
-            <div>
+            <div className='block'>
                 <div className="logo">
                     <img src={logo} alt="" />
                 </div>
@@ -20,7 +22,7 @@ const SideBar = () => {
                 <div>
                     <p className='keywords'>MENU</p>
                     <ul>
-                        <li><TextIcon text={'Tableau de bord'} icon={dashboard} type={'reverse'}/></li>
+                        <li><TextIcon text={'Tableau de bord'} icon={dashboard}/></li>
                         <li><TextIcon text={'Réponses'} icon={responses}/></li>
                         <li><TextIcon text={'Zone de partage'} icon={folder}/></li>
                         <li><TextIcon text={'Modèles'} icon={check}/></li>
@@ -29,7 +31,7 @@ const SideBar = () => {
                 </div>
             </div>
 
-            <div>
+            <div  className='block'>
                 <p className='keywords'>LIENS RAPIDES</p>
                 <ul>
                     <li><TextIcon text={'Espace employé'} icon={rightArrow}/></li>
@@ -38,7 +40,7 @@ const SideBar = () => {
                 </ul>
             </div>
 
-            <div className='logout'>
+            <div className='logout block'>
                 <button><TextIcon text={'Se déconnecter'} icon={logout}/></button>
             </div>
 
