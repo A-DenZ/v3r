@@ -3,7 +3,18 @@ import { Routes, Route } from 'react-router-dom'
 import Admin from './pages/Admin/Admin'
 import Dashboard from './pages/Admin/Dashboard/Dashboard'
 import SharingZone from './pages/Admin/SharingZone/SharingZone'
+import Forms from './pages/Admin/Forms/Forms'
+import { useEffect } from 'react'
+import WebFont from 'webfontloader'
 function App() {
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Poppins:300,400,500,600,700,800,900']
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -13,7 +24,7 @@ function App() {
       <Route path="/admin" element={<Admin />}>
         <Route index element={<Dashboard/>}/>
 
-        <Route path='formulaires'>
+        <Route path='formulaires' element={<Forms/>}>
           {/* <Route path={`:${id}`}/> */}
           <Route path='nouveau'/>
         </Route>

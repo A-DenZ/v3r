@@ -8,9 +8,9 @@ const TextIcon = ({ text, type, icon}) => {
     
     return (
         <div className={`text-icon ${type === 'reverse' ? 'reverse' : ''}`}>      
-            {type !== 'reverse' && icon}
+            {type !== 'reverse' && icon("var(--black-60)")}
             <p>{text}</p>
-            {type === 'reverse' && icon}
+            {type === 'reverse' && icon("var(--black-60)")}
         </div>
     )
 }

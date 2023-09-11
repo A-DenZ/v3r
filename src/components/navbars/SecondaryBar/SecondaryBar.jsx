@@ -1,5 +1,6 @@
 import './styles.scss'
-
+import TextIcon from '../../tools/TextIcon/TextIcon'
+import { user } from '../../../lib/icons'
 const SecondaryBar = () => {
   return (
     <div id="secondary-bar">
@@ -7,7 +8,7 @@ const SecondaryBar = () => {
             <h1>Tableau de bord</h1>
         </div>
         <div className="right">
-            <p>Étienne Courchesne</p>    
+            <TextIcon icon={user} text='Étienne Courchesne' type="reverse" />
         </div>
     </div>
   )
