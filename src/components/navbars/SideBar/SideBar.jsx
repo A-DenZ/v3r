@@ -1,5 +1,12 @@
 import logo from '../../../assets/images/logo.png'
 
+/* homemade component */ 
+import TextIcon from '../../tools/TextIcon/TextIcon'
+
+/* import icon */
+import { dashboard, responses, folder, check, analytic, rightArrow, logout } from '../../../lib/icons'
+
+
 const SideBar = () => {
 
     
@@ -13,11 +20,11 @@ const SideBar = () => {
                 <div>
                     <p className='keywords'>MENU</p>
                     <ul>
-                        <li><a href='c'>Tableau de bord</a></li>
-                        <li><a href='c'>Réponses</a></li>
-                        <li><a href='c'>Zone de partage</a></li>
-                        <li><a href='c'>Formulaires</a></li>
-                        <li><a href='c'>Analytique</a></li>
+                        <li><TextIcon text={'Tableau de bord'} icon={dashboard} type={'reverse'}/></li>
+                        <li><TextIcon text={'Réponses'} icon={responses}/></li>
+                        <li><TextIcon text={'Zone de partage'} icon={folder}/></li>
+                        <li><TextIcon text={'Modèles'} icon={check}/></li>
+                        <li><TextIcon text={'Analytique'} icon={analytic}/></li>
                     </ul>
                 </div>
             </div>
@@ -25,14 +32,14 @@ const SideBar = () => {
             <div>
                 <p className='keywords'>LIENS RAPIDES</p>
                 <ul>
-                    <li>Voir les réponses</li>
-                    <li>Créer un formulaire</li>
-                    <li>Zone de partage</li>
+                    <li><TextIcon text={'Espace employé'} icon={rightArrow}/></li>
+                    <li><TextIcon text={'Créer un modèle'} icon={rightArrow}/></li>
+                    <li><TextIcon text={'Autre lien utile'} icon={rightArrow}/></li>
                 </ul>
             </div>
 
             <div className='logout'>
-                <button>Se déconnecter</button>
+                <button><TextIcon text={'Se déconnecter'} icon={logout}/></button>
             </div>
 
         </nav>
