@@ -1,0 +1,9 @@
+.nav-search {
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr;
+    grid-column-gap: 10px;
+    
+    padding-left: 64px;
+    padding-right:64px;
+
+}
