@@ -1,24 +1,32 @@
-.nav-search {
+.sharing-zone {
+
+
+.card-zone{
+
     display: grid;
-    grid-template-columns: 1fr 0fr 0fr;
+    grid-template-columns: auto auto;
     gap: 10px;
 
-    padding :20px
+    margin-left: 64px;
+    margin-right: 64px;
 
-}
-
-.sharing-zone .card {
-   width: 615px; 
-   padding: 15px; 
-   margin-left: 20px;
+    .card {
+    padding: 2rem; 
+    margin-top: 1rem;
 
     h2 {
-     padding-bottom:12px;
-    }
+      padding-bottom:12px;
+     }
+  
+     .text-icon {
+       padding-top: 12px;
+       color: var(--green);
+     }
 
-    p {
-     padding-bottom:12px
-    }
+  } 
+ } 
 }
+
+
 
 

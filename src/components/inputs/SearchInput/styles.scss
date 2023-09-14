@@ -1,37 +1,38 @@
 #search-input .input-search {
     font-weight: 500;
     letter-spacing: 0.10em;
-
+  
     height: 62px;
     width: 432px;
     background-color: var(--green-white);
-    
+  
     display: flex;
-    text-align: center;
-
+    justify-content: center;
+  
     border: 1px solid var(--light-grey);
-}
+    padding-left: 2rem;
+  }
+  
 
 
-#search-input .search-bar {
+  
+  #search-input .search-bar {
     display: grid;
     grid-template-columns: 0fr 0fr;
-    
-}
-    
-
-#search-input .search-button {
-
+  }
+  
+  #search-input .search-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+  
     width: 181px;
     height: 100%;
-
+  
     background-color: var(--green);
     cursor: pointer;
-
+  
     color: var(--white);
     letter-spacing: 0.10em;
-}
+    text-align: center; 
+  }
