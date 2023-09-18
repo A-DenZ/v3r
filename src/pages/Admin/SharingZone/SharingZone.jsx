@@ -2,10 +2,12 @@ import './styles.scss'
 
 /* import homemade component */
 import TextIcon from '../../../components/tools/TextIcon/TextIcon'
-import SearchBar from '../../../components/navbars/SearchBar/SearchBar'
+import SearchInput from '../../../components/inputs/SearchInput/SearchInput'
+import Button from '../../../components/tools/Button/Button'
+
 
 /* import icons*/
-import { rightArrow } from '../../../lib/icons'
+import { rightArrow, filter, plus } from '../../../lib/icons'
 
 
 const titres = [
@@ -31,7 +33,11 @@ const SharingZone = () => {
 return (
     <div className="sharing-zone">  
     
-       <SearchBar/>
+    <div className='sharing-search-bar'>
+     <SearchInput/>
+     <Button text={<TextIcon text={'Filtres'} icon={filter}/>} bgColor={'var(--green-white)'} />
+     <Button text={<TextIcon text={'Nouveau'} icon={plus}/>} bgColor={'var(--green-white)'} />
+    </div>
 
         <div className='card-zone'>
 

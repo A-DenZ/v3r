@@ -25,6 +25,15 @@
 
   } 
  } 
+
+    .sharing-search-bar{
+      display: grid;
+      grid-template-columns: 2fr auto auto;
+      gap: 10px;
+
+      margin-right: 64px;
+      margin-left: 64px;
+    }
 }
 
 
