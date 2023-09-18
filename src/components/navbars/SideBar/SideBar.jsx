@@ -1,4 +1,5 @@
 import './styles.scss'
+import { Link } from 'react-router-dom'
 
 import logo from '../../../assets/images/logo.png'
 
@@ -17,15 +18,15 @@ const SideBar = () => {
         <nav>
             <div className='block'>
                 <div className="logo">
-                    <img src={logo} alt="" />
+                <Link to='/admin'><img src={logo} alt="" /></Link> 
                 </div>
 
                 <div>
                     <p className='keywords'>MENU</p>
                     <ul>
-                        <li><TextIcon text={'Tableau de bord'} icon={dashboard}/></li>
-                        <li><TextIcon text={'Réponses'} icon={responses}/></li>
-                        <li><TextIcon text={'Zone de partage'} icon={folder}/></li>
+                        <li><Link to=''><TextIcon text={'Tableau de bord'} icon={dashboard}/></Link></li>
+                        <li><Link to='formulaires'><TextIcon text={'Réponses'} icon={responses}/></Link></li>
+                        <li><Link to='partage'><TextIcon text={'Zone de partage'} icon={folder}/></Link></li>
                         <li><TextIcon text={'Modèles'} icon={check}/></li>
                         <li><TextIcon text={'Analytique'} icon={analytic}/></li>
                     </ul>

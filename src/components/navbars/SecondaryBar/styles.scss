@@ -17,4 +17,11 @@
         line-height: normal;
         letter-spacing: 1.6px;
     }
+
+    .right{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        
+    }
 }
