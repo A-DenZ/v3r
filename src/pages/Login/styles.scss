@@ -1,0 +1,48 @@
+#login {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+
+    overflow: hidden;
+
+    #logo {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+
+        translate: 0 -150px;
+        animation: translate-0 0.5s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    }
+
+    .circle-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        translate: 50%;
+
+        height: 92px;
+        width: auto;
+
+        transform-origin: center top;
+        rotate: -90deg;
+        animation: rotate-0 0.5s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    }
+
+    .circle-bot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        translate: -50%;
+
+        height: 92px;
+        width: auto;
+
+        transform-origin: center bottom;
+        rotate: -90deg;
+        animation: rotate-0 0.5s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+    }
+}
