@@ -1,0 +1,14 @@
+Questions: 
+
+- Mark as read indicator? => Oui - L'admin doit cliquer pour confirmer sa consultation du formulaire, noter la date de consultation
+
+
+Commentaires:
+
+- Prendre en note la date d'approbation ainsi que la date de consultation des réponses de formulaires
+- Inversé les couleurs du logo
+- Préférence d'une liste pour afficher les formulaires (bouton pour toggle grid to list)
+- ID - Nom du demandant - Statut (Ajouter des couleurs pour distinguer les statuts)
+- Ajouter un icone pour les modèles pour les différencier
+- Zone de partage - Titre et lien obligatoire, description optionelle
+- Garder un snapshot du formulaire au moment de sa saisie. Par exemple si un employé change de superviseur, son superviseur associé à la réponse de formulaire doit rester celui concerné au moment de la saisie.

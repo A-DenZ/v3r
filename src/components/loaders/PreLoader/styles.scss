@@ -1,0 +1,34 @@
+#preloader {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .dark-green {
+        z-index: 2;
+
+        background-color: #1E492D;
+    
+        clip-path: inset(0 0 0 0);
+        animation: clip-path-t 0.45s cubic-bezier(0.645, 0.045, 0.355, 1) 1s forwards;
+    }
+
+    .green {
+        z-index: 1;
+
+        background-color: #68B545;    
+
+        clip-path: inset(0 0 0 0);
+        animation: clip-path-t 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 1.35s forwards;
+    }
+}
+
