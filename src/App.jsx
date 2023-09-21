@@ -1,12 +1,19 @@
-
+// libraries
+import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import WebFont from 'webfontloader'
+
+// pages & components
+import PreLoader from './components/loaders/PreLoader/PreLoader'
+import Login from './pages/Login/Login'
 import Admin from './pages/Admin/Admin'
 import Dashboard from './pages/Admin/Dashboard/Dashboard'
 import SharingZone from './pages/Admin/SharingZone/SharingZone'
 import Forms from './pages/Admin/Forms/Forms'
-import { useEffect } from 'react'
-import WebFont from 'webfontloader'
-function App() {
+
+
+const App = () => {
+  const [loader, setLoader] = useState(true)
 
   useEffect(() => {
     WebFont.load({
@@ -18,8 +25,13 @@ function App() {
 
   return (
     <>
+    {/* preloader */}
+    {loader 
+    ?
+    <PreLoader hide={() => setLoader(false)} />
+    :
     <Routes>
-      <Route path="/" element={<App/>}/>
+      <Route path="/" element={<Login />}/>
      
       <Route path="/admin" element={<Admin />}>
         <Route index element={<Dashboard/>}/>
@@ -39,6 +51,8 @@ function App() {
 
       </Route>
     </Routes>
+    }
+
     </>
   )
 }
