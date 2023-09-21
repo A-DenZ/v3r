@@ -1,19 +1,21 @@
 import './styles.scss'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 import logo from '../../../assets/images/logo.png'
 
 /* homemade component */ 
 import TextIcon from '../../tools/TextIcon/TextIcon'
-import Button from '../../tools/Button/Button'
 
 /* import icon */
 import { dashboard, responses, folder, check, analytic, rightArrow, logout } from '../../../lib/icons'
 
 
-const SideBar = () => {
 
-    
+
+const SideBar = () => {
+ 
+    const location = useLocation();
+
     return (
         <nav>
             <div className='block'>
@@ -24,9 +26,9 @@ const SideBar = () => {
                 <div>
                     <p className='keywords'>MENU</p>
                     <ul>
-                        <li><Link to=''><TextIcon text={'Tableau de bord'} icon={dashboard}/></Link></li>
-                        <li><Link to='formulaires'><TextIcon text={'Réponses'} icon={responses}/></Link></li>
-                        <li><Link to='partage'><TextIcon text={'Zone de partage'} icon={folder}/></Link></li>
+                        <li className={location.pathname === '/admin' ? 'selected-page' : ''}> <Link to=''><TextIcon text={'Tableau de bord'} icon={dashboard} color={location.pathname === '/admin' ? 'var(--green)' : 'var(--black-60)'}/></Link> </li>
+                        <li className={location.pathname === '/admin/reponses' ? 'selected-page' : ''}><Link to='reponses'><TextIcon text={'Réponses'} icon={responses} color={location.pathname === '/admin/reponses' ? 'var(--green)' : 'var(--black-60)'}/></Link></li>
+                        <li className={location.pathname === '/admin/partage' ? 'selected-page' : ''}><Link to='partage'><TextIcon text={'Zone de partage'} icon={folder} color={location.pathname === '/admin/partage' ? 'var(--green)' : 'var(--black-60)'}/></Link></li>
                         <li><TextIcon text={'Modèles'} icon={check}/></li>
                         <li><TextIcon text={'Analytique'} icon={analytic}/></li>
                     </ul>
@@ -38,7 +40,6 @@ const SideBar = () => {
                 <p className='keywords'>LIENS RAPIDES</p>
                 <ul>
                     <li><TextIcon text={'Espace employé'} icon={rightArrow}/></li>
-                    <li><TextIcon text={'Créer un modèle'} icon={rightArrow}/></li>
                     <li><TextIcon text={'Autre lien utile'} icon={rightArrow}/></li>
                 </ul>
             </div>

@@ -54,6 +54,17 @@
        }
     }
 
+    .card:hover{
+
+        .icon{
+            color: var(--green);
+
+            svg path {
+                fill: var(--green);
+            }
+        }
+    }
+
     #stats-card {
         grid-column: span 2;
     }

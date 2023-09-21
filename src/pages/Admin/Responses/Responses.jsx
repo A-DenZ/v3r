@@ -6,21 +6,21 @@ import SearchInput from '../../../components/inputs/SearchInput/SearchInput'
 import Button from '../../../components/tools/Button/Button'
 
 
-let forms = [1,1,1,1,1,1,1,1,1,1,1,1,1]
+let responses = [1,1,1,1,1,1,1,1,1,1,1,1,1]
 let box = true;
 
-const Forms = () => {
+const Responses = () => {
     return ( 
-    <div id='forms'>
+    <div id='responses'>
      
-     <div className='form-search-bar'>
+     <div className='responses-search-bar'>
      <SearchInput/>
      <Button text={'Trier'} />
      <Button text={'Filtrer'} />
     </div>
 
       <div className={`container ${box ? "grid" : "list"}`}>
-      {forms.map((form, index) => (
+      {responses.map((response, index) => (
         <div className="card" key={index}>
           <h2>#7281-0394-3394</h2>
           <div className='text-container-cards'>
@@ -45,4 +45,4 @@ const Forms = () => {
     </div>
     );
 }
-export default Forms
+export default Responses
