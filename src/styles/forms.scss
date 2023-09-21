@@ -1,0 +1,16 @@
+// this document contains every 
+// variable related to forms
+
+:root {
+
+    // forms
+    --form-width: min(450px, 90%);
+    
+    // inputs
+    --input-height: 3em;
+    --input-inline-padding: 1rem;
+    --input-background-color: transparent;
+    --input-line-thickness: 3px;
+    --input-line-color: var(--green);
+
+}

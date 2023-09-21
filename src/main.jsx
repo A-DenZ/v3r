@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 // css
 import './styles/reset.scss'
 import './styles/system.scss'
+import './styles/forms.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
