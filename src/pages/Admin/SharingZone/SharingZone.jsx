@@ -35,8 +35,8 @@ return (
     
     <div className='sharing-search-bar'>
      <SearchInput/>
-     <Button text={<TextIcon text={'Filtres'} icon={filter}/>} bgColor={'var(--green-white)'} />
-     <Button text={<TextIcon text={'Nouveau'} icon={plus}/>} bgColor={'var(--green-white)'} />
+     <Button text={<TextIcon text={'Filtres'} icon={filter}/>} bgColor={'var(--light-green)'} />
+     <Button text={<TextIcon text={'Nouveau'} icon={plus}/>} bgColor={'var(--light-green)'} />
     </div>
 
         <div className='card-zone'>

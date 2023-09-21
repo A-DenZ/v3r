@@ -2,7 +2,7 @@
 
     // colors
     --white: #FFFFFF;
-    --green-white: #FBFFFA;
+    --light-green: #FBFFFA;
     --light-grey: #CCCCCC;
 
     --black: #1D1D1B;
@@ -39,7 +39,7 @@
     flex-shrink: 0;
 
     border: 1px solid var(--light-grey);
-    background-color: var(--green-white);
+    background-color: var(--light-green);
     box-shadow: var(--card-shadow);
     transition: ease 0.2s;
 

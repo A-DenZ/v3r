@@ -1,4 +1,4 @@
-#forms{
+#responses{
     .container {
         padding-inline: 4rem;
         display: grid;
@@ -54,7 +54,7 @@
         }
     }
 
-    .form-search-bar{
+    .responses-search-bar{
         display: grid;
         grid-template-columns: 2fr auto auto;
         gap: 10px;

@@ -11,8 +11,8 @@ const SecondaryBar = () => {
             <h1>Tableau de bord</h1>
         </div>
         <div className="right">
-            <TextIcon icon={user} text='Étienne Courchesne' type="reverse" />
-            <Icon icon={bell} size={20} color={'var(--green)'}/>
+            <TextIcon icon={user} text='Étienne Courchesne' type="reverse" color={'var(--blue)'}/>
+            <Icon icon={bell} size={21} color={'var(--green)'}/>
         </div>
     </div>
   )
